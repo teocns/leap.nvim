@@ -10,11 +10,11 @@ local function create_default_mappings()
       if (rhs_2a == "") then
         vim.keymap.set(mode, lhs, rhs, {silent = true, desc = desc})
       else
-        if (rhs_2a ~= rhs) then
-          local msg = ("leap.nvim: create_default_mappings() " .. "found conflicting mapping for " .. lhs .. ": " .. rhs_2a)
-          vim.notify(msg, vim.log.levels.WARN)
-        else
-        end
+        -- if (rhs_2a ~= rhs) then
+        --   local msg = ("leap.nvim: create_default_mappings() " .. "found conflicting mapping for " .. lhs .. ": " .. rhs_2a)
+        --   vim.notify(msg, vim.log.levels.WARN)
+        -- else
+        -- end
       end
     end
   end
